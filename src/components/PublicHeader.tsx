@@ -1,5 +1,5 @@
 
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { 
@@ -21,7 +21,7 @@ const PublicHeader: React.FC = () => {
             <svg viewBox="0 0 24 24" className="h-6 w-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
             </svg>
-            <span className="font-bold text-xl">OpenTrace</span>
+            <span className="font-bold text-xl">Glassblock</span>
           </Link>
         </div>
         
@@ -43,8 +43,8 @@ const PublicHeader: React.FC = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link to="/services" className={navigationMenuTriggerStyle()}>
-                  Services
+                <Link to="/solutions" className={navigationMenuTriggerStyle()}>
+                  Solutions
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -52,6 +52,13 @@ const PublicHeader: React.FC = () => {
               <NavigationMenuLink asChild>
                 <Link to="/pricing" className={navigationMenuTriggerStyle()}>
                   Pricing
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link to="/about" className={navigationMenuTriggerStyle()}>
+                  About
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
