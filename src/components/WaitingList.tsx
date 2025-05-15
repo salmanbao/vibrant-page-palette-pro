@@ -40,11 +40,11 @@ const WaitingList: React.FC = () => {
   return (
     <div className="w-full max-w-md mx-auto">
       {isSubmitted ? (
-        <div className="flex flex-col items-center p-6 bg-chainhawk-dark/20 rounded-lg border border-chainhawk-medium">
-          <div className="bg-chainhawk-dark rounded-full p-2 mb-4">
+        <div className="flex flex-col items-center p-8 bg-chainhawk-dark/20 rounded-lg border border-chainhawk-medium/50 shadow-md">
+          <div className="bg-chainhawk-dark rounded-full p-3 mb-5 pulse-glow">
             <Check className="h-6 w-6 text-accent" />
           </div>
-          <h3 className="text-xl font-semibold mb-2">Thank you!</h3>
+          <h3 className="text-xl font-semibold mb-3">Thank you!</h3>
           <p className="text-center text-muted-foreground">
             You're on the waiting list! We'll notify you when ChainHawk launches.
           </p>
@@ -55,14 +55,14 @@ const WaitingList: React.FC = () => {
             <Input
               type="email"
               placeholder="Enter your email"
-              className="flex-grow border-chainhawk-medium focus-visible:ring-chainhawk-dark"
+              className="flex-grow border-chainhawk-medium/50 focus-visible:ring-chainhawk-dark focus-visible:border-chainhawk-medium"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <Button 
               type="submit" 
-              className="bg-chainhawk-dark hover:bg-chainhawk-medium text-white"
+              className="bg-chainhawk-dark hover:bg-chainhawk-medium text-white shadow-md"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Joining..." : "Join Waitlist"}
