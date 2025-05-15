@@ -28,6 +28,12 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				chainhawk: {
+					dark: '#537D5D',
+					medium: '#73946B',
+					light: '#9EBC8A',
+					accent: '#D2D0A0',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

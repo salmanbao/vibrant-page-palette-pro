@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
+    --background: 215 35% 11%;
     --foreground: 210 40% 98%;
 
-    --card: 222 47% 11%;
+    --card: 215 35% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222 47% 11%;
+    --popover: 215 35% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 246 80% 60%;
+    --primary: 144 20% 40%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 215 25% 27%;
+    --secondary: 95 16% 51%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 215 25% 27%;
+    --muted: 95 16% 51%;
     --muted-foreground: 217.9 10.6% 64.9%;
 
-    --accent: 48 96% 53%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 50 57% 72%;
+    --accent-foreground: 215 35% 11%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 25% 27%;
-    --input: 215 25% 27%;
-    --ring: 246 80% 60%;
+    --border: 95 16% 51%;
+    --input: 95 16% 51%;
+    --ring: 144 20% 40%;
 
     --radius: 0.5rem;
   }
@@ -54,18 +54,11 @@
   }
 }
 
-.transaction-node {
-  @apply fill-secondary stroke-primary stroke-[2];
-}
-
-.transaction-link {
-  @apply stroke-muted-foreground stroke-[1];
-}
-
-.blockchain-card {
+/* ChainHawk specific custom classes */
+.chainhawk-card {
   @apply bg-card p-4 rounded-lg border shadow-sm;
 }
 
-.blockchain-header {
+.chainhawk-header {
   @apply font-medium text-sm text-muted-foreground mb-2;
 }
