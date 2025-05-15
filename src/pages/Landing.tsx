@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WaitingList from '@/components/WaitingList';
+import AnimatedBlock from '@/components/AnimatedBlock';
 
 const Landing: React.FC = () => {
   return (
@@ -60,8 +61,8 @@ const Landing: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-chainhawk-dark/20 border border-chainhawk-medium rounded-lg p-6 h-[300px] flex items-center justify-center">
-                <p className="text-xl font-semibold text-center text-chainhawk-accent">Coming Soon</p>
+              <div className="rounded-lg overflow-hidden h-[300px]">
+                <AnimatedBlock />
               </div>
             </div>
           </div>
