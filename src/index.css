@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -57,11 +58,29 @@
 
 /* ChainHawk specific custom classes */
 .chainhawk-card {
-  @apply bg-card p-4 rounded-lg border shadow-sm;
+  @apply bg-card p-6 rounded-lg border border-chainhawk-medium/40 shadow-md hover:border-chainhawk-medium/70 transition-colors;
 }
 
 .chainhawk-header {
   @apply font-medium text-sm text-muted-foreground mb-2;
+}
+
+/* Section spacing */
+.chainhawk-section {
+  @apply py-24 md:py-28;
+}
+
+.chainhawk-section-alt {
+  @apply py-24 md:py-28 bg-chainhawk-dark/5;
+}
+
+/* Card and border enhancements */
+.chainhawk-feature-card {
+  @apply bg-background/80 border border-chainhawk-medium/40 rounded-lg p-6 transition-all duration-300 hover:border-chainhawk-light/70 hover:shadow-lg;
+}
+
+.chainhawk-subtle-border {
+  @apply border border-chainhawk-medium/30;
 }
 
 /* Animation utility classes */
@@ -84,3 +103,4 @@
 .pulse-glow {
   animation: pulse-glow 2s infinite;
 }
+
